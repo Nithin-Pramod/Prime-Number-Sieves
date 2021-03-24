@@ -5,8 +5,10 @@ using namespace std;
 
 int main()
 {
-    int *prime,a;
-    cout<<"Enter the range";
+    int *prime,a,b;
+    cout<<"Enter the initial range : ";
+    cin>>b;
+    cout<<"Enter the final range : ";
     cin>>a;
     prime=(int*)malloc((a+1)*sizeof(int));
     
@@ -27,7 +29,7 @@ int main()
         }
     
     }
-    for(int i =0;i<a;i++)
+    for(int i =b;i<a;i++)
     {
         if(prime[i]==1)
         {
